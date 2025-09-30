@@ -69,6 +69,8 @@ client.on("messageCreate", (message) => {
   }
 });
 
+client.login(process.env.TOKEN);
+
 const express = require('express');
 const app = express();
 
@@ -77,4 +79,5 @@ app.listen(3000);
 
 // Login with token
 client.login(process.env.TOKEN);
+
 
