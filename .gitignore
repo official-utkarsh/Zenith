@@ -1,0 +1,3 @@
+node_modules/   # Installed packages, huge and unnecessary to push
+.env            # Your bot token and other sensitive info
+.DS_Store       # MacOS file, not needed
