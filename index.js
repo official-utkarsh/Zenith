@@ -69,5 +69,12 @@ client.on("messageCreate", (message) => {
   }
 });
 
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => res.send('Zenith is alive!'));
+app.listen(3000);
+
 // Login with token
 client.login(process.env.TOKEN);
+
