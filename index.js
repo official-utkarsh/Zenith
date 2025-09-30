@@ -28,8 +28,8 @@ const afkCommand = client.commands.get("afk");
 let afkUsers = afkCommand ? afkCommand.afkUsers : {};
 
 // When bot is ready
-client.once("ready", () => {
-  console.log(`✅ Zenith is online as ${client.user.tag}`);
+client.on('clientReady', () => {
+    console.log(`✅ Logged in as ${client.user.tag}`);
 });
 
 // Handle messages
@@ -79,5 +79,6 @@ app.listen(3000);
 
 // Login with token
 client.login(process.env.TOKEN);
+
 
 
